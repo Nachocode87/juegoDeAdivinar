@@ -23,9 +23,12 @@
 
   <main class="container">
     <p class="h3">Trata de adivinar el numero, si no acertaste te dire si es mayor o menor</p>
-    <button class="btn btn-primary my-3">Comenzar juego</button>
-    <input class="form-control" type="text" placeholder="adivina el numero" aria-label="default input example">
-    <button class="btn btn-light my-3">enviar</button>
+    <button class="btn btn-primary my-3" id='buttonStart' onclick="random()">Comenzar juego</button>
+    
+      <p class="h2">?</p>
+      <input class="form-control" id='numeroInput' type="text"  placeholder="adivina el numero" aria-label="default input example">
+      <button class="btn btn-light my-3" id='buttonSend'>enviar</button>
+    
   </main>
 
   <footer>

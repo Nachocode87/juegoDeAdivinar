@@ -2,4 +2,22 @@
 Cuando el usuario adivine el numero mostrar un mensaje indicando al usuario que adivino el numero.
 */
 
+const random = ()=>{
+    const numRandom = Math.floor(Math.random()*(20 - 1)+1)
+    console.log(numRandom)
+    const buttonSend = document.getElementById('buttonSend');
+    buttonSend.addEventListener('click', ()=>{
+        //console.log(numRandom)
+        const num = parseInt(document.getElementById('numeroInput').value);
+        if(num === numRandom) {
+            alert('felicidades adivinaste')
+        } else if(num > numRandom) {
+            alert('el numero es menor, sigue intentando')
+        } else {
+            alert('el numero es mayor, sigue intentando')
+        }
+    })
+    
+}
+
 
